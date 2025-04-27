@@ -21,7 +21,7 @@ def get_chunks_fixed_size(text: str, chunk_size: int) -> List[str]:
     return chunks
 
 
-def main():
+def loadVectorDB():
     script_dir = os.path.dirname(os.path.realpath(__file__))
     print(script_dir)
     file_path = script_dir + '\\data\\archive\\News_Category_Dataset_v3.json'
@@ -65,4 +65,4 @@ def main():
     client.close()  # Free up resources
 
 if __name__ == "__main__":
-    main()
+    loadVectorDB()
